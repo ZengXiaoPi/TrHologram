@@ -14,6 +14,7 @@ import org.bukkit.inventory.meta.SkullMeta
 import taboolib.common.util.Strings.similarDegree
 import taboolib.library.xseries.XMaterial
 import taboolib.module.nms.MinecraftVersion
+import taboolib.platform.util.ItemBuilder
 import taboolib.platform.util.buildItem
 import kotlin.math.min
 
@@ -147,7 +148,7 @@ class Texture(
                                     .find { it -> it.legacy.any { it == name } }
                                 ?: XMaterial.values()
                                     .maxByOrNull { similarDegree(name, it.name) }
-                        return xMaterial?.parseItem() ?: FALL_BACK
+                        xMaterial?.parseItem() ?: FALL_BACK
                     }
                 }
             }
