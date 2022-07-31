@@ -7,7 +7,7 @@ plugins {
 }
     
 group = "me.arasple.mc.trhologram"
-version = "2.4-pre27"
+version = "2.4-pre28"
 description = "Modern & Advanced Hologram-Plugin for Minecraft Servers"
 
 taboolib {
@@ -33,6 +33,7 @@ taboolib {
             name("TrMenu").optional(true)
             name("SkinsRestorer").optional(true)
             name("Multiverse-Core").loadafter(true)
+            name("PlotSquared").loadafter(true)
         }
     }
 
