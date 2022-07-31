@@ -35,7 +35,7 @@ object TrHologramAPI {
 
     @JvmStatic
     fun eval(player: Player, script: String): CompletableFuture<Any?> {
-        mirrorNow("Hologram:Handler:ScriptEval") {
+        return mirrorNow("Hologram:Handler:ScriptEval") {
             return@mirrorNow try {
                 KetherShell.eval(script, namespace = listOf("trhologram", "trmenu")) {
                     sender = adaptPlayer(player)
@@ -48,7 +48,6 @@ object TrHologramAPI {
                 CompletableFuture.completedFuture(false)
             }
         }
-        throw Exception()
     }
 
     @JvmStatic
