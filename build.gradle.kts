@@ -7,7 +7,7 @@ plugins {
 }
     
 group = "me.arasple.mc.trhologram"
-version = "2.4-pre28"
+version = "2.4-pre29"
 description = "Modern & Advanced Hologram-Plugin for Minecraft Servers"
 
 taboolib {
@@ -38,7 +38,7 @@ taboolib {
     }
 
     classifier = null
-    version = "6.0.9-11"
+    version = "6.0.9-65"
 }
 
 repositories {
@@ -49,11 +49,13 @@ repositories {
 
 dependencies {
     compileOnly("org.jetbrains.kotlin:kotlin-stdlib")
-    compileOnly("ink.ptms.core:v11604:11604")
-    compileOnly("ink.ptms.core:v11600:11600")
-    compileOnly("ink.ptms.core:v11300:11300")
-    compileOnly("ink.ptms.core:v11200:11200")
-    compileOnly("ink.ptms.core:v10900:10900")
+    compileOnly("ink.ptms:nms-all:1.0.0")
+    compileOnly("ink.ptms.core:v11900:11900-minimize:mapped")
+    compileOnly("ink.ptms.core:v11900:11900-minimize:universal")
+    compileOnly("ink.ptms.core:v11800:11800-minimize:mapped")
+    compileOnly("ink.ptms.core:v11800:11800-minimize:universal")
+    compileOnly("ink.ptms.core:v11701:11701:mapped")
+    compileOnly("ink.ptms.core:v11701:11701:universal")
     compileOnly("me.clip:placeholderapi:2.10.9")
     compileOnly(fileTree("libs"))
 }

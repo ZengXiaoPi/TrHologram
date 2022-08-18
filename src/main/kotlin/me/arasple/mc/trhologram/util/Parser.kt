@@ -27,7 +27,7 @@ fun String.parseLocation(): Location {
 }
 
 fun Location.parseString(): String {
-    val world = world.name
+    val world = world?.name
     val x = Coerce.format(x)
     val y = Coerce.format(y)
     val z = Coerce.format(z)
