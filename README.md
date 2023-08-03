@@ -67,7 +67,7 @@ dependencies {
 
 ```
 
-#### Usage
+#### Usagea
 
 ```java
 class Demo {
